@@ -1,0 +1,42 @@
+/* Run the below code in the browser to enable new module */
+===========================================================
+http://rajhms.localhost/admin/index.php?module=core_userGroup&_spAction=createAccessRecords
+http://rajhms.cubosale.in/admin/index.php?module=core_userGroup&_spAction=createAccessRecords
+
+#========= ANSARI (27.07.2018) =========#
+ALTER TABLE `patient_visit` ADD `referred_to_doctor` VARCHAR(255) NULL DEFAULT NULL AFTER `referral_doctor_id`;
+ALTER TABLE `patient_visit` ADD `referred_by_doctor` VARCHAR(255) NULL DEFAULT NULL AFTER `referred_to_doctor`;
+ALTER TABLE `patient_visit` ADD `patient_visit_advice` TEXT NULL DEFAULT NULL AFTER `referred_by_doctor`; 
+
+#========= ANSARI (15.10.2018) =========#
+INSERT INTO `setting` (`setting_id`, `description`, `key_text`, `value`, `creation_date`, `modification_date`, `group_name`, `value_type`, `show_to_user`, `chi_value`, `used_for_admin`, `used_for_www`, `created_by`, `modified_by`, `flag`, `site_id`) VALUES
+(251, 'This is used for letter pad pdf.', 'cp.letterPadDraft', '', '2018-10-15 12:08:47', '2018-10-06 16:17:05', NULL, 'Text Area', 1, NULL, NULL, NULL, 'Dr Vinay', 'Super Admin', NULL, NULL);
+
+INSERT INTO `setting` (`setting_id`, `description`, `key_text`, `value`, `creation_date`, `modification_date`, `group_name`, `value_type`, `show_to_user`, `chi_value`, `used_for_admin`, `used_for_www`, `created_by`, `modified_by`, `flag`, `site_id`) VALUES
+(252, 'This is used to print draft date.', 'cp.letterPadDraftDate', '2018-10-16', '2018-10-15 13:15:44', '2018-10-15 13:10:16', NULL, 'Text Field', 1, NULL, NULL, NULL, 'Super Admin', 'Super Admin', NULL, NULL);
+
+ALTER TABLE `product` ADD `before_after` VARCHAR(100) NULL;
+ALTER TABLE `prescribe_medicine` ADD `before_after` VARCHAR(100) NULL;
+ALTER TABLE `medicines_visit` ADD `before_after` VARCHAR(100) NULL;
+
+CREATE TABLE IF NOT EXISTS `advice` (
+  `advice_id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) DEFAULT NULL,
+  `description` text,
+  `creation_date` datetime DEFAULT NULL,
+  `modification_date` datetime DEFAULT NULL,
+  `created_by` varchar(200) DEFAULT NULL,
+  `modified_by` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`advice_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+CREATE TABLE IF NOT EXISTS `follow_up` (
+  `follow_up_id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(100) DEFAULT NULL,
+  `description` text,
+  `creation_date` datetime DEFAULT NULL,
+  `modification_date` datetime DEFAULT NULL,
+  `created_by` varchar(200) DEFAULT NULL,
+  `modified_by` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`follow_up_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;

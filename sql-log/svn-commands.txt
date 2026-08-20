@@ -1,0 +1,13 @@
+USE THIS COMMAND TO TRANSFER LOCAL FILES FROM TO DEV/TEST :
+==========================================================
+/utils/export-from-git.sh --repo rajhms --dest /home/rajhms/public_html/
+
+USE THIS COMMAND TO TRANSFER MASTER FILES FROM TO DEV/TEST :
+===========================================================
+/utils/export-from-git.sh --repo cmsPilot --folder v3.0/CP/admin/modules/Hms/ --dest /home/cmsPilot/
+
+/utils/export-from-git.sh --repo cmsPilot --folder v3.0/CP/admin/themes/Angle/ --dest /home/cmsPilot/
+
+
+USE THIS COMMAND TO MOVE MASTER(V3) FILES DEV/TEST TO LIVE :
+===========================================================

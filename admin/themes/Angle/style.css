@@ -1,0 +1,420 @@
+@charset "UTF-8";
+
+@media all
+{
+    body {
+    	text-transform: uppercase;
+    }
+
+    .sub {
+	    background-color: #F6F6F6;
+	    border: 1px solid #DDDDDD;
+	    border-radius: 5px;
+	    display: none;
+	    height: 438px;
+	    overflow: auto;
+	    padding-top: 20px;
+	    position: relative;
+	    top: 3px;
+	    z-index: 9999;
+	    min-width: 224px;
+	}
+
+	.homeTop {
+	    left: 1px;
+	    position: absolute;
+	    top: 0;
+	    z-index: 1 !important;
+	}
+
+	.homePageSummaryList {
+	    margin: 15px;
+	    min-height: 234px;
+	}
+
+	.paddingNone {
+	    padding: 0 !important;
+	}
+
+	.refreshIcon::before{
+	    content: '\f021';
+	    font-family: FontAwesome;
+	    font-size: 15px;
+	    margin-right: 6px;
+	}
+
+	.patientVisitSummaryWalkIn img,
+    .patientVisitSummary img,
+    .patientVisitSummarySiteWise img,
+    .labReportSummaryYesterday img,
+    .attendanceReportSummary img {
+        width: 30px !important;
+        height: 30px !important;
+        float: right;
+    }
+
+    .m-common_dashboard #dashboard .c50l
+    , .m-common_dashboard #dashboard .c50r {
+        width: 98%;
+    }
+
+    .dashboardSummary .c33l {
+        width: 32% !important;
+    }
+
+    .dashboardSummary .patientVisitSummary {
+        font-size: 16px !important;
+        height: 216px;
+        margin-right: 0px !important;
+    }
+
+    .dashboardSummary .patientVisitSummaryWalkIn{
+        height: 216px;
+    }
+
+    .dashboardSummary .patientVisitSummaryWalkIn #PatientVisitDisplayDiv1{
+    	font-size: 36px !important;
+    }
+
+    .dashboardSummary .patientVisitSummarySiteWise{
+        background-color: #0268DD;
+        font-size: 16px;
+        height: 216px;
+        padding: 9px;
+    }
+
+    .dashboardSummary .labReportSummaryYesterday {
+        background-color: #f06292;
+        font-size: 16px;
+        height: 216px;
+        padding: 9px;
+    }
+
+    .dashboardSummary .attendanceReportSummary {
+        background-color: #00bcd5;
+        font-size: 16px;
+        height: 439px;
+        padding: 9px;
+    }
+
+    .dashboardSummary .patientVisitSummarySiteWise td,
+    .dashboardSummary .patientVisitSummary td,
+    .dashboardSummary .patientVisitSummary td u,
+    .dashboardSummary .patientVisitSummarySiteWise td u,
+    .dashboardSummary .labReportSummaryYesterday td,
+    .dashboardSummary .labReportSummaryYesterday td u,
+    .dashboardSummary .attendanceReportSummary td,
+    .dashboardSummary .attendanceReportSummary td u {
+        font-size: 16px !important;
+    }
+
+    .labReportSummaryYesterday hr,
+    .attendanceReportSummary hr{
+        padding: 2px !important;
+        margin: 0 !important;
+    }
+
+    .colDash {
+        padding-left: 0 !important;
+        margin-bottom: 8px;
+        padding-right: 8px;
+    }
+
+    .btnRefreshColorPanels {
+        margin-left: 8px;
+        position: absolute;
+        left: 0 !important;
+    }
+
+    /*.attendanceWidgetDashboardDiv {
+        max-height: 174px;
+        overflow-y: auto;
+    }*/
+    
+    .m-hms_patientVisit .acrylicDentureDate input,
+    .m-hms_labs .acrylicDentureDate input {
+	    width: 53% !important;
+	}
+
+	.m-hms_patientVisit .acrylicDentureDate label,
+	.m-hms_labs .acrylicDentureDate label {
+	    width: 36% !important;
+	}
+
+	.moduleTitle{
+		display: none;
+	}
+
+	.editTopButtonActionDiv {
+	    position: absolute;
+	    top: 6px;
+	    width: 75%;
+	}
+
+	h4.modal-title {
+	    font-size: 20px;
+	    font-weight: bold;
+	}
+
+	.onLoadLocationSelectDropdown > select ,
+	.onLoadLocationSelectDropdown > label {
+	    font-size: 22px;
+	    font-weight: bold;
+	}
+
+	#locationChoosemodal .modal-dialog {
+	    margin: 150px auto;
+	    width: 688px;
+	}
+
+	.onLoadLocationSelectDropdown > select {
+	    height: 32px;
+	}
+
+	/*.cpSearch input[type="text"] {
+		max-width: 200px !important;
+		width: 200px !important;
+	}*/
+
+	.cpSearch input[type="text"] {
+		max-width: 200px !important;
+		width: 100px !important;
+	}
+
+	.cpSearch .dateRange {
+	    width: 400px;
+	}
+
+	/********************** PATIENT VISIT *************************/
+	.diagnosisDisplay,
+	.treatmentDisplay {
+    	width: 100%;
+	}
+
+	.treatmentBox,
+	.labTestBox {
+    	min-height: 121px;
+    	padding: 5px;
+	}
+
+	.labTestBox {
+    	min-height: 34px;
+	}
+
+	.diagnosisBox {
+    	min-height: 55px;
+    }
+
+    .cpFullWidth #col3_content {
+        margin-left: 12px !important;
+        margin-right: 12px !important;
+    }
+
+    .m-hms_patientVisit.v-edit table.thinlist.overallSummaryPortal td,
+    .m-hms_patientVisit.v-edit table.thinlist.overallSummaryPortal th{
+    	padding: 8px;
+    }
+
+    .m-hms_patientVisit #frmEdit #portalForm_vitalSignsDisplay .type-text label{
+    	width:25%;
+    }
+
+	.ulModuleSet {
+	    height: 391px;
+	    width: 192px;
+	}
+
+	#tabs.ui-tabs .ui-tabs-nav li a {
+    	width: 150px;
+	}
+
+	.linkPortalWrapper table td .ageBox input[type="text"]{
+		width:50%;
+	}
+
+	.linkPortalWrapper table td .tempBox input[type="text"]{
+		width:75%;
+	}
+
+	.linkPortalWrapper table td .fees input[type="text"]{
+		width:100%;
+	}
+
+	.ageBox label{
+		display: block;
+	}
+
+	.ageBox {
+		width: 33%;
+		float:left;
+	}
+
+	.tempBox {
+		width: 16.5%;
+		float:left;
+	}
+
+	.addExistingMedicine input, .addNewMedicine input, .addComplain input, .addDiagnosis input, .addProcedure input{
+		width: 200px;
+		padding:5px;
+		font-weight: bold;
+	}
+
+	.complainTabClass{
+		padding-right: 20px;
+		margin-right: 40px;
+		border-right: 3px solid #999;
+	}
+
+	.m-hms_patientVisit.v-list .cpSearch .dateRange input[type="text"]{
+		width: 100px !important;
+		min-width: 100px !important;
+		max-width: 100px !important;
+	}
+
+	.tplLogin label {
+	    width: 25% !important;
+	}
+
+	#loginOuter .forgotPasswordLink {
+	    margin-top: 20px !important;
+	    text-decoration: underline;
+	}
+
+    .m-hms_patientVisit.v-list .cpSearch input[type="text"] {
+        min-width: 100px;
+    }
+
+    .m-labsg_patientVisit.v-list .cpSearch input[name="keyword"] {
+        min-width: 100px;
+    }
+
+    .SiteNameOnHeader{
+    	color: #FFFFFF;
+		font-weight: 600;
+		margin-left: -8px;
+		margin-top: 0;
+		padding-top: 6px;
+		font-size: 25px;
+	}
+
+    .m-hms_labTest .defaultListDisplay, .m-hms_labTest .cpSearch{
+        display: none;
+    }
+
+    .m-hms_labTest .c50l,
+    .m-hms_labTest .c50r{
+        width: 100%;
+    }
+
+    .m-hms_labTest .ym-columnar .ym-fbox-text label,
+    .m-hms_labTest .ym-columnar .ym-fbox-select label,
+    .m-hms_labTest #frmEdit .type-text label,
+    .m-hms_labTest #frmEdit .type-select label
+    {
+        width: 100%;
+    }
+
+    #tabs .columnar div.type-button {
+        margin-left: 0;
+    }
+
+    .ui-menu {
+	    max-height: 300px;
+	    overflow: auto;
+	    text-align: left;
+	}
+
+    .patientVisitSummaryPortal th,
+    .patientVisitSummaryPortal td,
+    .patientVisitSummaryPortal td div,
+    .patientVisitSummaryPortal td a{
+        font-size: 12px !important;
+    }
+
+	.TimeoutButtonHeader, .TimeinButtonHeader{
+		margin: 0 15px;
+	}
+
+	.timeInMargin {
+		margin-left: 50px;
+	}
+
+	.dayTimePanel{
+		border:2px solid #fff;
+		width: 24%;
+		float: right;
+		padding-bottom: 5px;
+	}
+
+	.TimeinHeaderButton{
+		padding: 5px !important;
+		width: 125px;
+	}
+
+	.TimeinHeaderButton2{
+		padding: 5px !important;
+		width: 140px;
+	}
+
+	.vaccinationPortalDetail .row_vaccination_date label{
+		display: none;
+	}
+
+	.linkPortalWrapper .vaccinationPortalDetail table td .fld_fees input[type="text"]{
+		width: 50%;
+	}
+
+	a.highlightGroupName{
+		color:red;
+		font-weight: bold;
+	}
+
+	.incomeReport, .incomeReport span, .incomeReport .expenseDetails{
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.incomeReport span {
+		width: 300px;
+	}
+
+	.incomeReport .subTitles {
+		font-size: 13px;
+		font-weight: bold;
+	}
+
+	.totalValue, .totalValue div{
+		font-size: 16px !important;
+		font-weight: bold;
+	}
+
+	.w-hms-balanceSheetReport table.thinlist th, .w-hms-balanceSheetReport table.thinlist td{
+		border:1px solid #ccc;
+	}
+
+	.scrollToTop {
+	    background: #49C3E9 none repeat scroll 0 0;
+	    bottom: 70px;
+	    font-size: 20px;
+	    height: 44px;
+	    line-height: 0.8;
+	    padding: 10px 11px;
+	    position: fixed;
+	    right: 60px;
+	    text-align: center;
+	    width: 42px;
+	    z-index: 99;
+	    border-radius: 30px;
+	}
+
+	.scrollToTop i {
+	    color: #fff;
+	    font-size: 22px;
+	    font-weight: normal;
+	}
+
+	#frmEdit #portalForm_medicalTestDisplay .type-text label{
+		width: 50%;
+	}
+}

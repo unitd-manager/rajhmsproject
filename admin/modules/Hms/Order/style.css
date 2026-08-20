@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.m-hms_order .highlightCell {
+    background-color: #551A8B;
+    color: #fff;
+}
+
+.m-hms_order .highlight {
+	background-color: #B4BAC4;
+}
+
+.m-hms_order img.icon {
+	width: 25px;
+}
+
+.m-hms_order .cpSearch input[type="text"]{
+    max-width: 200px !important;
+    width: 100px !important;
+}
+
+.m-hms_order.v-list table.thinlist thead th{
+	color: #FFF !important;
+}
+
+.dotted {
+   border-bottom: 1px dashed #999;
+}
